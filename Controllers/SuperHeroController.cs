@@ -18,6 +18,11 @@ namespace SuperHeroAPI.Controllers
             _dataContext = dataContext;
         }
 
+        /// <summary>
+        /// Get all heroes
+        /// </summary>
+        /// <response code="200">Success</response>
+        /// <response code="500">Internal Server Error</response>
         [HttpGet]
         public async Task<IActionResult> GetAllHeroes()
         {
@@ -26,6 +31,13 @@ namespace SuperHeroAPI.Controllers
             return Ok(heroes);
         }
 
+        /// <summary>
+        /// Get hero by id
+        /// </summary>
+        /// <param name="id">Id: entry param</param>
+        /// <response code="200">Success</response>
+        /// <response code="404">Not Found</response>
+        /// <response code="500">Internal Server Error</response>
         [HttpGet("{id}")]
         public async Task<ActionResult<List<SuperHero>>> GetHeroById(int id)
         {
@@ -37,6 +49,12 @@ namespace SuperHeroAPI.Controllers
             return Ok(hero);
         }
 
+        /// <summary>
+        /// Create Hero
+        /// </summary>
+        /// <param name="superHero">Name: entry param</param>
+        /// <response code="200">Success</response>
+        /// <response code="500">Internal Server Error</response>
         [HttpPost]
         public async Task<ActionResult<List<SuperHero>>> AddHero(SuperHero superHero)
         {
@@ -46,6 +64,13 @@ namespace SuperHeroAPI.Controllers
             return Ok(await _dataContext.SuperHeroes.ToListAsync());
         }
 
+        /// <summary>
+        /// Update hero
+        /// </summary>
+        /// <param name="superHero">Name: entry param</param>
+        /// <response code="200">Success</response>
+        /// <response code="404">Not Found</response>
+        /// <response code="500">Internal Server Error</response>
         [HttpPut]
         public async Task<ActionResult<List<SuperHero>>> UpdateHero(SuperHero superHero)
         {
@@ -64,6 +89,13 @@ namespace SuperHeroAPI.Controllers
             return Ok(await _dataContext.SuperHeroes.ToListAsync());
         }
 
+        /// <summary>
+        /// Delete hero
+        /// </summary>
+        /// <param name="id">Name: entry param</param>
+        /// <response code="200">Success</response>
+        /// <response code="404">Not Found</response>
+        /// <response code="500">Internal Server Error</response>
         [HttpDelete]
         public async Task<ActionResult<List<SuperHero>>> DeleteHero(int id)
         {
