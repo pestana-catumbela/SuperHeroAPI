@@ -10,6 +10,9 @@ C# | DOTNET 8 | ASP.NET | Entity Framework Core
 ### Screen Swagger (Endpoints)
 ![Screen Swagger Endpoint](https://github.com/pestana-catumbela/SuperHeroAPI/blob/main/assets/SuperHero-Endpoints.png)
 
+### Screen Swagger (Endpoints Documented)
+![Screen Swagger Endpoint](https://github.com/pestana-catumbela/SuperHeroAPI/blob/main/assets/SuperHero-Endpoints%20Documented.png)
+
 ### Screen Swagger (Hero Created)
 ![Screen Swagger Hero Created](https://github.com/pestana-catumbela/SuperHeroAPI/blob/main/assets/SuperHero-200OK.png)
 
