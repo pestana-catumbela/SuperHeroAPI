@@ -36,5 +36,14 @@ namespace SuperHeroAPI.Controllers
 
             return Ok(hero);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<List<SuperHero>>> AddHero(SuperHero superHero)
+        {
+            _dataContext.SuperHeroes.Add(superHero);
+            await _dataContext.SaveChangesAsync();
+
+            return Ok(await _dataContext.SuperHeroes.ToListAsync());
+        }
     }
 }
