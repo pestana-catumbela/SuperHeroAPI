@@ -5,7 +5,14 @@
 [![NPM](https://img.shields.io/npm/l/dotnet)](https://github.com/pestana-catumbela/SuperHeroAPI/blob/main/LICENSE)
 
 ### Technologies Used
-C# | .NET 8 | ASP.NET | Entity Framework Core | SQL Server
+[C#](https://dotnet.microsoft.com/pt-br/languages/csharp) | [.NET 8](https://dotnet.microsoft.com/pt-br/learn/dotnet/what-is-dotnet) | [ASP.NET CORE](https://dotnet.microsoft.com/pt-br/apps/aspnet) | [ENTITY FRAMEWORK CORE](https://learn.microsoft.com/pt-br/ef/core/) | [SQL SERVER](https://www.microsoft.com/pt-br/sql-server/sql-server-2022)
+
+### How To Run
+- Clone the project in your local environment
+  ```bash
+  git clone https://github.com/pestana-catumbela/AwesomeDevEvent
+  ```
+- Open the application in your Visual Studio and run
 
 ### Screen Swagger (Endpoints)
 ![Screen Swagger Endpoint](https://github.com/pestana-catumbela/SuperHeroAPI/blob/main/assets/SuperHero-Endpoints.png)
